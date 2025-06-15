@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Predsjednički izbori 2019</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Rezultati predsjedničkih izbora 2019.</h1>
+    <div id="navigacija">
+      <button id="reset">Prikaži ukupne rezultate Hrvatske</button>
+      <div id="izborkruga">
+        <label for="krug">Izaberi krug izbora:</label>
+        <select id="krug">
+          <option value="1">1. krug</option>
+          <option value="2">2. krug</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="mapa">
+      <div id="tekstmapa">
+        <p>Klikni na županiju za lokalne rezultate.</p>
+      </div>
+    </div>
+    <div id="dijagrami">
+      <div id="kruzni"></div>
+      <div id="histogram"></div>
+    </div>
+    <div id="footer">
+      <p>&copy; 2025 Rezultati izbora. Sva prava zadržana.</p>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
